@@ -1,0 +1,152 @@
+:root
+{
+    --blurple: #5865f2;
+    --black: #060a0b;
+    --greyple: #99aab5;
+    --dark-charcoal: #2c2f33;
+    --navy-blue: #24173f;
+}
+body
+{
+    margin: 0;
+    font-family: 'Ggsans', sans-serif;
+    height: 350vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 2fr 0.5fr;
+    background-color: white;
+}
+h3
+{
+    font-weight: 400;
+    align-self: left;
+    padding: 0 20px 100px 50px;
+    line-height: 40px;
+    max-width: 60%;
+    color: var(--dark-charcoal);
+}
+img
+{
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+    transform: scale(1.2);
+    padding: 30px;
+}
+.marg-30
+{
+    margin-top: 50px;
+}
+.block-all
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-text
+{
+    display: flex;
+}
+.block-1
+{
+    background-color: var(--blurple);
+}
+.block-2
+{
+    flex-direction: column;
+}
+.block-1 .text-block h1
+{
+    color: white;
+    font-weight: 900;
+    font-size: 55px;
+    text-align: left;
+    line-height: 50px;
+    max-width: 60%;
+    padding-left: 50px;
+}
+.text-block h1
+{
+    padding-left: 50px;
+}
+.block-2 .text-block h3
+{
+    max-width: 100%;
+    line-height: 30px;
+}
+.block-3 .text-block h3
+{
+    max-width: 100%;
+    line-height: 30px;
+}
+.block-4 .text-block h3
+{
+    max-width: 70%;
+    line-height: 30px;
+    margin-left: 50px;
+}
+.block-4 .text-block h1
+{
+    margin-left: 50px;
+}
+.block-5
+{
+    flex-direction: column;
+}
+.block-5 h1
+{
+    color: var(--dark-charcoal);
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 50px;
+    text-align: center;
+    max-width: 75%;
+}
+button
+{
+    width: 327px;
+    height: 53px;
+    font-weight: 350;
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    background-color: var(--navy-blue);
+    color: white;
+    cursor: pointer;
+    justify-self: center;
+}
+.block-6
+{
+    background-color: #23272a;
+}
+
+@media (max-width:484px)
+{
+    .block-all
+    {
+        flex-direction: column;
+    }
+    .block-1 img
+    {
+        display: none;
+    }
+    .img-text
+    {
+        flex-direction: column;
+    }
+    .block-3 .img-text
+    {
+        flex-direction: column-reverse;
+    }
+    .text-block
+    {
+        padding: 30px;
+    }
+    img
+    {
+        max-width: 70%;
+    }
+
+}
